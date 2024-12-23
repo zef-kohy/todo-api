@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.time.ZonedDateTime;
 import java.util.Date;
 
 @Data
@@ -23,11 +24,13 @@ public class Todo implements Serializable {
     @NotEmpty(message = "Veuillez donner un titre à la tâche")
     private String title;
 
+    @NotEmpty(message = "Veuillez donner une description à la tâche")
     private String description;
 
+    @NotEmpty(message = "Veuillez donner un statut à la tâche")
     private String status;
 
-    private Date dueDate;
+    private ZonedDateTime startDate;
 
     private boolean favorite;
 
