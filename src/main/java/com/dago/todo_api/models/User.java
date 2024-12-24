@@ -21,20 +21,19 @@ public class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @NotEmpty(message = "Veuillez renseigner le prénom")
+
     private String firstName;
 
-    @NotEmpty(message = "Veuillez renseigner le nom")
+
     private String lastName;
 
-    @NotEmpty(message = "Veuillez renseigner le nom")
+
     private String password;
 
-    @NotEmpty(message = "Veuillez renseigner votre mail")
-    @Email(message = "Votre adresse mail n'est pas valide")
+
     private String email;
 
-    @NotEmpty(message = "Veuillez renseigner le nom d'utilisateur")
+
     private String username;
 
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)

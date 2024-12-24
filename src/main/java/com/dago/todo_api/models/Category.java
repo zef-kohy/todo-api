@@ -20,7 +20,7 @@ public class Category implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @NotEmpty(message = "Veuillez donner un nom à la catégorie")
+
     private String name;
 
     private String description;

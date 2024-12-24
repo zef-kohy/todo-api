@@ -21,13 +21,13 @@ public class Todo implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @NotEmpty(message = "Veuillez donner un titre à la tâche")
+
     private String title;
 
-    @NotEmpty(message = "Veuillez donner une description à la tâche")
+
     private String description;
 
-    @NotEmpty(message = "Veuillez donner un statut à la tâche")
+
     private String status;
 
     private ZonedDateTime startDate;
